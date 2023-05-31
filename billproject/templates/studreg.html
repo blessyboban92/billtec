@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Student Form</title>
+
+</head>
+
+<body>
+
+<h1>Student Form</h1>
+
+<form method="post">
+
+{% csrf_token %}
+    <label>Admission No:</label>
+
+<input type="text" name="admn_no"><br>
+
+
+<label>Course Fee:</label>
+
+<input type="number" name="course_fee"><br>
+<label>Opening Balance:</label>
+
+<input type="number" name="opening_balance"><br>
+
+
+<br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+
+</html>

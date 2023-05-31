@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid body333" >
+    <div class="row">
+         <div class="col-md-12">
+    <div class="banner">
+            <div class="banner-text">
+                <h1>Enrolled Student List</h1>
+            </div></div>
+</div></div></div>
+
+{% for i in register_list %}
+<a href="{% url 'credentails:registerdetail' i.id%}">{{i.admn_no}}</a><br>
+{% endfor %}
+{% endblock %}

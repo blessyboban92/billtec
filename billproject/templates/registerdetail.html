@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid body333" >
+    <div class="row">
+         <div class="col-md-12">
+    <div class="banner">
+            <div class="banner-text">
+                <h1>Student Details</h1>
+            </div></div>
+</div></div></div>
+<p>Admission Number:{{register.admn_no}}</p>
+<p>Student Name:{{register.sname}}</p>
+<p>Date Of Birth:{{register.dob}}</p>
+<p>Aadhar Number:{{register.aadharno}}</p>
+<p>Email id:{{register.email_id}}</p>
+<p>Ph No:{{register.phno}}</p>
+<p>Address:{{register.address}}</p>
+<p>Date Of Joining:{{register.doj}}</p>
+<p>Course Duration:{{register.duration}}</p>
+<p>Course End Date:{{register.end_date}}</p>
+<p>Class Mode:{{register.mode}}</p>
+<p>Total Course:{{register.course_fee}}</p>
+<p>EMI:{{register.emi}}</p>
+<p>Per Month:{{register.permonth}}</p>
+{% endblock %}
